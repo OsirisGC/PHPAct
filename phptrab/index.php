@@ -6,12 +6,12 @@
     <head>
         <link rel="stylesheet" href="public/css/main.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">    </head>
-    <body>
-        <div class="row justify-content-md-center">
+    <body style="background-color: grey">
+        <div class="row justify-content-md-center" >
             <div class="col-md-3 col-lg-3 col-sm-12" style="padding-top: 15%;">
                 <form method="post" action="app/AuthController.php" class="form" style="width: 23rem;">
                     <fieldset>
-                        <legend class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">
+                        <legend class="fw-normal mb-3 pb-3" style="letter-spacing: 1px; text-align: center">
                             Datos de acceso
                         </legend>
                         <label>

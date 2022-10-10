@@ -16,10 +16,10 @@ $product = $productController->getProductDetail($_GET['slug']);
         <?php include "../layouts/sidebar.template.php"; ?>
         <div class="col-10">
           <div class="row">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#createProductModal" class="btn btn-primary" style="background-color: green">
-              Añadir producto
-            </a>
             <div class="card col-7">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#createProductModal" class="btn btn-primary" style="background-color: blue; width:200px; height:35px">
+                Añadir
+              </a>
               <img src="<?php echo $product->cover; ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title"><?php echo $product->name; ?></h5>
@@ -58,8 +58,8 @@ $product = $productController->getProductDetail($_GET['slug']);
               <?php endfor; ?>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
             </div>
           </div>
         </div>

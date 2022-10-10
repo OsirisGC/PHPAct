@@ -20,7 +20,7 @@ $arrayBrands = $productController->getAllBrands($token);
         <?php include "../layouts/sidebar.template.php"; ?>
         <div class="col-10">
           <div class="row">
-            <a onclick="addProduct()" href="#" data-bs-toggle="modal" data-bs-target="#createProductModal" class="btn btn-primary" style="background-color: green">Añadir producto</a>
+            <a onclick="addProduct()" href="#" data-bs-toggle="modal" data-bs-target="#createProductModal" class="btn btn-primary" style="background-color: blue ">Añadir producto</a>
             <?php foreach ($products as $product) { ?>
               <div class="card col-3">
                 <img class="card-img-top" src="<?php echo $product->cover ?>" alt="Card image cap">
@@ -42,7 +42,7 @@ $arrayBrands = $productController->getAllBrands($token);
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Title</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -75,7 +75,7 @@ $arrayBrands = $productController->getAllBrands($token);
                 <label for="formFile" class="form-label">Default file input example</label>
                 <input name="cover" type="file" class="form-control">
               </div>
-              <button type="submit" class="btn btn-primary">Save changes</button>
+              <button type="submit" class="btn btn-primary">Guardar</button>
               <input id="inputOculto" type="hidden" name="action" value="create">
               <input id="id" type="hidden" name="id">
               <input type="hidden" name="global_token" value="<?= $_SESSION['global_token']?>">
